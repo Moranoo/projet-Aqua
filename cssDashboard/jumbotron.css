@@ -1,0 +1,57 @@
+.jumbotron {
+    box-shadow: 5px 5px 5px rgb(74, 78, 78);
+}
+
+.btn {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.form-control, .breadcrumb{
+    box-shadow: 5px 5px 5px rgb(74, 78, 78);
+}
+/*bouton "supprimer" de messagerieBureau.php*/
+@media(max-width:1024px){
+   a.ml-4{
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 95px;
+    font-size: 0.7rem;
+   } 
+}
+
+
+/* titre  */
+@media(max-width:768px){
+    h1.display-4{
+        font-size: 2rem;
+    }
+}
+
+/*image de la modale read*/
+@media(max-width:425px){
+    .modal-body{
+        width: 90%;
+    }
+    .modal-body img{
+        width: 380px;
+    }
+}
+@media(max-width:375px){
+ 
+    .modal-body img{
+        width: 330px;
+    }
+}
+
+@media(max-width:320px){
+ 
+    .modal-body img{
+        width: 300px;
+        margin-left: -10px;
+    }
+}
+
+
+/*bouton supprimer du "dashboard"*/
+
+

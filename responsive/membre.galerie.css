@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;600;700&family=Poppins&display=swap");
+
+body {
+  background: #f1f1f1;
+  font-family: "Lato", sans-serif;
+}
+.container2 {
+  /* position:relative;  */
+  width: 90%;
+  max-width: 1400px;
+  margin-left: 5%;
+  margin-top: auto;
+  text-align: center;
+  z-index: -289;
+  
+}
+
+h1 {
+  color: #1a2f42;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed gray;
+}
+h1 span {
+  display: block;
+  font-weight: normal;
+}
+h1 span:nth-child(1) {
+  margin-top: 3rem;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1a2f42;
+}
+
+h1 span:nth-child(2) {
+  font-size: 2.5rem;
+}
+.card-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
+  margin: 80px 0;
+}
+.card-wrapper {
+  position: relative;
+  min-height: 350px;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  color: white;
+  font-weight: bold;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-front {
+  background: rgb(128, 166, 205, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-wrapper:nth-child(even) .card-front {
+  background-color: rgba(45, 114, 179, 255);
+}
+.card-front p {
+  font-size: 20px;
+  line-height: 35px;
+}
+.arrow-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.card-descript {
+  font-size: 25px;
+}
+.card-back {
+  background-image: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.06) 0%,
+      rgba(107, 107, 107, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 100%
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+  background-size: 30px 30px;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper:nth-child(even) .card-back {
+  background-image: linear-gradient(
+      135deg,
+      rgba(107, 107, 107, 0.06) 0%,
+      rgba(107, 107, 107, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 50%,
+      rgba(202, 202, 202, 0.06) 100%
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+  background-size: 30px 30px;
+}
+.card-back a {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.card-wrapper:nth-child(odd) .card-back a:hover {
+  background-color: rgba(45, 114, 179, 255);
+  color: white;
+}
+.card-wrapper:nth-child(even) .card-back a:hover {
+  background-color: rgba(45, 114, 179, 255);
+  color: white;
+}
+
+/*************PARTIE RESPONSIVE**************************/
+@media (max-width:1945px){
+  .container2{
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  h1 span:nth-child(2) {
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width:768px){
+  .card-container2{
+    width: 100%;
+  }
+  .container2 h1{
+    width: 100%;
+  }
+}
+
+@media (max-width: 653px) {
+  h1 span:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  h1 span:nth-child(2) {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 592px) {
+  h1 span:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  h1 span:nth-child(2) {
+    font-size: 1.4rem;
+  }
+  .card-container2 {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 495px) {
+  .container2 {
+    margin-left: 12%;
+    padding: 5% 10%;
+  }
+
+  .card-container2 {
+    margin-left: -1%;
+  }
+
+  h1 span:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  h1 span:nth-child(2) {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .container2 {
+    width: 100%;
+    margin-left: -3%;
+  }
+
+  .card-container2{
+    margin-left: -3%;
+  }
+  .card p, .card-back .btn{
+    font-size: 1rem;
+  }
+  .card{
+    width: 110%;
+  }
+
+  h1 span:first-child{
+    font-size: 1.8rem;
+  }
+  h1 span:nth-child(2){
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-front p {
+    font-size: 17px;
+    padding: auto 10px;
+   
+  }
+
+  .card-descript {
+    padding: 20px;
+  }
+
+  .card-container2 {
+    margin-left: 1%;
+  }
+
+  .card {
+    margin-left: -10%;
+  }
+  h1 span:nth-child(2){
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container2 {
+    width:100%;
+    /* margin-left: 20%; */
+  }
+
+  .card-container2{
+    width: 100%;
+    /* margin-left: 12%; */
+  }
+  .card-wrapper {
+    margin-left: 15%;
+  }
+  .card p, .card-back .btn{
+    font-size: 1rem;
+  }
+  h1{
+    margin-left: 10%;
+  }
+  h1 span:nth-child(2){
+    font-size: 1rem;
+    width: 110%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container2 {
+    width: 110%;
+    margin-right: 8%;
+  }
+  .card-wrapper {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container2 {
+    width: 100%;
+    margin-left: 0%;
+   
+  }
+  .container2 h1 span:first-child{
+    font-size: 2.5rem;
+  }
+
+  .card-container2{
+    width: 100%;
+    margin-left: 4%;
+  }
+  .card-wrapper {
+    margin-left: 8%;
+    margin-right: -5%;
+  }
+
+  .card p, .card-back .btn{
+    font-size: 0.9rem;
+  }
+  .card{
+    width: 300px;
+  }
+  
+  .container2 h1{
+    border-bottom: 1px dashed gray;
+    margin-left: 10%;
+  }
+
+  h1 span:first-child{
+    width: 100%;
+    font-size: 1rem;
+    /* margin-left: -7%; */
+  }
+
+  h1 span:nth-child(2){
+    width: 90%;
+    margin-left: 5%;
+  }
+
+}

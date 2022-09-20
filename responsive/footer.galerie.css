@@ -1,0 +1,431 @@
+
+footer {
+  position: relative;
+  width: 100%;
+  background: rgba(45, 114, 179, 255);
+  height: 15.3rem;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.element img {
+  width: 200px;
+  height: 136px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
+  width: 50rem;
+  padding: 0% 3%;
+
+}
+
+.text p {
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.adresse,
+.horaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.email:hover{
+  font-size:1.5rem;
+}
+
+.social {
+  width: 20%;
+}
+
+.social p {
+  color: #f1f1f1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-items: center;
+  align-items: baseline;
+}
+
+footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px 0 0px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+.adresse a{
+  outline:none;
+  border: none;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wavemedium.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  /* z-index: 1000; */
+  opacity: 0.7;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  /* z-index: 999; */
+  opacity: 0.2;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3 {
+  /* z-index: 1000; */
+  opacity: 0.5;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  /* z-index: 999; */
+  opacity: 1;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+ /****************************************/
+/************PARTIE RESPONSIVE************/
+/****************************************/
+@media(max-width:1852px){
+  .social p{
+    margin-left: 27%;
+  }
+}
+
+@media(max-width:1440px){
+  .social p{
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer{
+  padding: 20px 10px;
+  display: flex;
+  justify-content: baseline;
+
+  }
+  .element img {
+    width: 160px;
+    height: 109px;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 40rem;
+    margin-left: 20%;
+    /* padding: 0% 3%; */
+
+  }
+
+
+  .horaire{
+  
+    width:50%
+  }
+
+  .text p {
+    font-size: 1rem;
+    margin: 5px auto;
+  }
+  .social p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+
+  footer{
+    width:768px;
+    height: 30rem;
+    justify-content: center;
+  }
+
+.element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .element img {
+    width: 120px;
+    height: 82px;
+  }
+
+  .infos {
+    width: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 35%;
+
+  }
+  .infos .adresse p, .infos .horaire p{
+    font-size: 1rem;
+  }
+  .adresse{
+    margin-bottom: 5px;
+  }
+
+  .adresse a{
+    font-size: 1.1rem;
+  }
+
+  .horaire{
+    margin-left: 5%;
+    margin-bottom: 5px;
+  }
+
+  .text p {
+    font-size: 0.7rem;
+    margin: 3px 5px;
+  }
+  .social p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: -2px;
+    width: 120%;
+
+  }
+
+  /* footer .social_icon {
+    margin-left: 10px;
+  } */
+  footer .social_icon li a {
+    font-size: 1.5em;
+    color: #fff;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+
+  footer{
+    width: 425px;
+    height: 30rem;
+  }
+  .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -2.5rem;
+    width: 425px;
+    font-size: 1.5rem;
+   
+  }
+
+  .infos .adresse{
+    margin-left: 20%;
+  }
+  .infos .horaire{
+    margin-left: 25%;
+  }
+   
+   .element img {
+     width: 90px;
+     height: 61px;
+    
+   }
+ 
+   .infos {
+     justify-content: space-between;
+     width: 25rem;
+     margin-left: 0%;
+   }
+   .adresse a{
+     font-size: .9rem;
+   }
+   .adresse p:nth-child(1){
+     width: 110%;
+   }
+ 
+   .social p {
+     font-size: 1rem;
+     font-weight: 700;
+     margin-left: 8%;
+   }
+ 
+   footer .social {
+     width: 10rem;
+     margin-left:0px;
+   }
+ 
+   footer .social_icon {
+     margin-left: 10%;
+   }
+   footer .social_icon li a {
+     font-size: 1.2em;
+     color: #fff;
+   }
+ }
+
+@media (max-width: 375px) {
+  footer {
+    height: 30rem;
+    margin-bottom: -30px;
+    width: 402px;
+  }
+
+  #monLogo{
+    width: 110px;
+    height: 80px;
+  }
+  
+  .element {
+    width: 375px;
+   flex-direction: column; 
+   text-align: center;
+   justify-content: center;
+   margin-left: 12px;
+  }
+
+  .infos {
+    width: 30rem;
+    margin-bottom: -5px;
+    flex-direction: column; 
+  }
+.infos .adresse p, .infos .adresse a, .infos .horaire p, .social p {
+  font-size: 1.5rem;
+}
+.social p{
+  width: 15rem;
+  margin-left: -9%;
+}
+  .infos .adresse {
+    margin-bottom: 10px;
+   margin-left: 15%;
+    width: 20rem;
+  }
+
+  .infos .horaire {
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+
+  .social .social_icon{
+    margin-left: 15%;
+  }
+
+ 
+}
+
+@media (max-width: 320px) {
+  footer {
+    height: 30rem;
+    margin-left: 0rem;
+    width: 345px
+  } 
+  .infos .adresse p, .infos .adresse a, .infos .horaire p, .social p {
+    font-size: 1rem;
+  }
+
+
+  #monLogo{
+    width: 110px;
+    height: 80px;
+  }
+  .infos{
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+.horaire{
+
+ margin-left:0;
+}
+
+.social{
+ margin-top: 2rem;
+}
+.social p{
+  margin-left: 15px;
+}
+}
+
+

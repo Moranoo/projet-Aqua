@@ -1,0 +1,108 @@
+body{
+    overflow-x: hidden;
+    height: 90vh;
+}
+
+.jumbotron {
+    box-shadow: 5px 5px 5px rgb(74, 78, 78);
+}
+
+.btn {
+    box-shadow: 5px 5px 5px grey;
+  
+}
+
+a#dashboard{
+    background:rgb(215, 45, 249);
+    color: white;
+    
+}
+
+.membre .display-4 {
+    margin-top: -10%;
+    font-size: 2rem;
+
+}
+
+.centre {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -3%;
+}
+
+.aquarium {
+    padding-bottom: -80%;
+}
+
+.aquarium .display-4 {
+    margin-top: -10%;
+    font-size: 2rem;
+}
+
+.messagerie  {
+width: 230%;
+margin-top: -5.5%;
+margin-left: 10%;
+}
+
+.messagerie .display-4 {
+    margin-top: -5%;
+    font-size: 2rem;
+}
+
+@media(max-width:768px){
+    h1.display-5{
+        font-size: 1.5rem;
+    }
+    .membre .display-4, .aquarium .display-4, .messagerie .display-4{
+        font-size: 1.3rem;
+    }
+    p.lead{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:425px){
+    h1.display-5{
+        font-size: 1.2rem;
+    }
+    .membre .display-4, .aquarium .display-4, .messagerie .display-4{
+        font-size: 1rem;
+    }
+    p.lead{
+        font-size: 0.9rem;
+    }
+    body{
+       height: 40vh;
+    }
+}
+
+@media(max-width:375px){
+    h1.display-5{
+        font-size: 1rem;
+    }
+    .membre .display-4, .aquarium .display-4, .messagerie .display-4{
+        font-size: 0.8rem;
+    }
+    p.lead{
+        font-size: 0.7rem;
+    }
+    body{
+       height: 40vh;
+    }
+}
+@media(max-width:320px){
+    h1.display-5{
+        font-size: 0.9rem;
+    }
+    .membre .display-4, .aquarium .display-4, .messagerie .display-4{
+        font-size: 0.6rem;
+    }
+    p.lead{
+        font-size: 0.5rem;
+    }
+    body{
+       height: 40vh;
+    }
+}
+

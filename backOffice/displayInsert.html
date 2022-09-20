@@ -1,0 +1,65 @@
+
+<form action="insertAqua.php" name="insertRecord" method="POST" enctype="multipart/form-data">
+   
+    <div class="row">
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>N° Bac</strong></p>
+            <input type="text" name="nbac" class="form-control" required>
+        </div>
+        
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Conductivité</strong></p>
+            <input type="text" name="conductivite" class="form-control" required>
+        </div>
+    </div>
+  <br>
+    <div class="row">
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Ph</strong></p>
+            <input type="text" name="ph" class="form-control" required>
+        </div>
+      
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Volume</strong></p>
+            <input type="text" name="volume" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Biotop et Espèces</strong></p>
+            <input type="text" name="biotopEspeces" class="form-control" required>
+        </div>
+    
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Type Nourriture </strong></p>
+            <input type="text" name="typeNourriture" class="form-control" required>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Type d'Eau </strong></p>
+            <input type="text" name="typeEau" class="form-control" required>
+        </div>
+       
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Prix de Vente</strong></p>
+            <input type="text" name="prixVente" class="form-control" required>
+        </div>
+        </div>
+        <br>
+        <div class="col-md-6">
+            <p style="margin-bottom:-2px"><strong>Image</strong></p>
+            <input type="file" name="image" class="box" accept="jpg, png, jpeg, webp">
+        </div>
+    </div>
+    <br>
+    
+    <div class="row" style="margin-top:1%">
+        <div class="col-md-6">
+            <input type="submit" name="insert" class="btn btn-success btn-sm" value="Créer">
+            <a href="cards.php" class="btn btn-danger btn-sm">Retour</a>
+        </div>
+    </div>
+</form>

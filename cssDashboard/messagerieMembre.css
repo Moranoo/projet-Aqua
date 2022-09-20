@@ -1,0 +1,65 @@
+body{
+    height: 90vh;
+}
+
+.jumbotron {
+    box-shadow: 5px 5px 5px rgb(74, 78, 78);
+}
+
+.btn {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.grid{
+    flex-direction: column;
+    border: 1px solid grey;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(121, 120, 120);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -4%;
+}
+
+.grid p input{
+    width: 100%;
+}
+
+@media(max-width:425px){
+   .box1{
+        width: 380px;
+     
+    }
+    #textarea{
+        width: 380px;
+    }
+}
+
+@media(max-width:375px){
+    .box1{
+         width: 340px;
+      
+     }
+     #textarea{
+         width: 340px;
+     }
+ }
+
+ @media(max-width:320px){
+    .box1{
+         width: 290px;
+      
+     }
+     #textarea{
+         width: 290px;
+     }
+ }
+
+
+
+
